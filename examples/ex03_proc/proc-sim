@@ -116,11 +116,15 @@ def main():
   # Create test harness and elaborate
 
   if opts.delay:
-    model = TestHarness( impl_dict[ opts.impl ], NullXcelRTL, 0,
+    # Kevin 2021/1/10
+    #model = TestHarness( impl_dict[ opts.impl ], NullXcelRTL, 0,
+    model = TestHarness( impl_dict[ opts.impl ], NullXcelRTL, 
                         # src sink memstall memlat
                           3,  4,   0.5,     4 )
   else:
-    model = TestHarness( impl_dict[ opts.impl ], NullXcelRTL, 0,
+    # Kevin 2021/1/10
+    #model = TestHarness( impl_dict[ opts.impl ], NullXcelRTL, 0,
+    model = TestHarness( impl_dict[ opts.impl ], NullXcelRTL,
                         # src sink memstall memlat
                           0,  0,   0,       1 )
 
