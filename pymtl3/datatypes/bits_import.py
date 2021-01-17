@@ -61,7 +61,7 @@ class Bits{0}(Bits):
 _bits_types[{0}] = b{0} = Bits{0}
 """
 
-_bitwidths  = list(range(1, 256)) + [ 384, 512 ]
+_bitwidths  = list(range(1, 258)) + [ 384, 512, 768, 1024, 2048 ]
 _bits_types = dict()
 
 custom_exec(compile( "".join([ bits_template.format(nbits) for nbits in _bitwidths ]),
@@ -69,7 +69,7 @@ custom_exec(compile( "".join([ bits_template.format(nbits) for nbits in _bitwidt
 
 def mk_bits( nbits ):
   assert nbits > 0, "We don't allow Bits0"
-  # assert nbits < 512, "We don't allow bitwidth to exceed 512."
+  # assert nbits < 2048, "We don't allow bitwidth to exceed 2048."
   if nbits not in _bits_types:
     custom_exec(compile( bits_template.format(nbits), filename=f"Bits{nbits}", mode="exec" ),
                 globals(), locals() )
