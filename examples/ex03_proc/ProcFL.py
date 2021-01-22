@@ -14,6 +14,7 @@ from pymtl3.stdlib.mem import MemMasterIfcFL
 
 from .tinyrv0_encoding import RegisterFile, TinyRV0Inst, disassemble_inst
 
+import ipdb; ipdb.set_trace()
 
 class ProcFL( Component ):
 

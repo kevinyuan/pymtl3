@@ -18,6 +18,8 @@ from pymtl3.stdlib.mem.MagicMemoryCL import MagicMemoryCL, mk_mem_msg
 from pymtl3.stdlib.connects import connect_pairs
 from pymtl3.stdlib.test_utils import TestSinkCL, TestSrcCL
 
+import ipdb; ipdb.set_trace()
+
 #=========================================================================
 # TestHarness
 #=========================================================================

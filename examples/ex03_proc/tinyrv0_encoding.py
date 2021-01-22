@@ -20,6 +20,8 @@ from pymtl3 import *
 
 from .SparseMemoryImage import SparseMemoryImage
 
+#import ipdb; ipdb.set_trace()
+
 #=========================================================================
 # Encoding Table
 #=========================================================================

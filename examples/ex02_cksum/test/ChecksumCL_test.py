@@ -22,6 +22,8 @@ from ..ChecksumCL import ChecksumCL
 from ..ChecksumFL import checksum
 from ..utils import b128_to_words, words_to_b128
 
+#import ipdb; ipdb.set_trace()
+
 #-------------------------------------------------------------------------
 # WrappedChecksumCL
 #-------------------------------------------------------------------------
